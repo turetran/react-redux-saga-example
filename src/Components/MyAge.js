@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
-import {ChangeMyAge} from '../Actions'
+import {ChangeMyAgeSaga} from '../Actions'
 
 class MyAge extends Component {
     constructor(props){
@@ -31,7 +31,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-        changeMyAge: (myage) => dispatch(ChangeMyAge(myage))
+        changeMyAge: (myage) => dispatch(ChangeMyAgeSaga(myage))
   }
 }
 
